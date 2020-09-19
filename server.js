@@ -23,4 +23,4 @@ app.use(express.static("client/build"));
 app.use(user);
 app.use(admin);
 app.use(course);
-app.listen(PORT, () => console.log("server started"));
+app.listen(PORT, () => console.log("server started Seccesfully"));
