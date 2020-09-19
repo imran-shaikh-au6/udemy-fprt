@@ -17,10 +17,12 @@ app.use(
         extended: false,
     })
 );
-
 app.use(express.static("client/build"));
-
+console.log(path.__dirname);
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "build", "index.html"));
+});
 app.use(user);
 app.use(admin);
 app.use(course);
-app.listen(PORT, () => console.log("server started Seccesfully! on port"));
+app.listen(PORT, () => console.log("server started"));
