@@ -4,7 +4,7 @@ const cloudinary = require("cloudinary").v2;
 // const path = require("path");
 
 //pages import
-const upload = require("../../config/passport");
+const upload = require("../../Config/passport");
 const User = require("../../model/User");
 const Coures = require("../../model/Coures");
 const Admin = require("../../model/Admin");
